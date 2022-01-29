@@ -8,7 +8,7 @@ body {
 
 .container {
     display: flex;
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 h1{
@@ -18,6 +18,30 @@ h1{
 }
 .m-left {
     color: white;
-    padding: 130px 45px 0px 78px;
+    padding: 170px 45px 0px 78px;
     font-weight: 500;
+}
+
+.m-right{
+    margin-left: 1rem;
+}
+
+#try-free{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+   
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: hsl(248, 32%, 49%);
+    border-color: transparent;;
+    border-radius: 10px;
+    box-shadow: 0px 8px 1px 0px rgba(209, 90, 90, 0.822);
+}
+
+.mPrice {
+    margin-left: 0.25em;
+    font-weight: 400;
 }
