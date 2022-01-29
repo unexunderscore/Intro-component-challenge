@@ -80,6 +80,7 @@ h1{
     
 }
 
+
 .topOne{
     margin-top: 2rem;
 }
@@ -89,7 +90,9 @@ h1{
     width: 100%;
 }
 
+
 #firstWrong, #lastWrong, #emailWrong, #passWrong{
+    display: none;
     width: 100%;
     
     
@@ -99,10 +102,11 @@ h1{
     font-size: 11px;
     font-weight: 500;
     color:hsl(0, 100%, 74%);
-
+    
 }
 
 .form-group img{
+    display: none;
     margin-top: 5px;
     position: absolute;
     right: 55px;
@@ -150,3 +154,52 @@ h1{
     border-color: hsla(154, 62%, 70%, 0.87);
     border-bottom: 3px solid hsla(154, 48%, 44%, 0.527);
 }
+
+#termText:hover{
+    cursor: pointer;
+}
+
+/* On screens that are 1000px or less, set the background color to blue */
+@media screen and (max-width: 1000px) {
+   
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        padding-top: 15vh;
+    }
+
+    h1{
+        font-size: 24px; 
+        
+        
+    }
+    .m-left{
+        width: 100%;
+        margin: 0;
+        padding:0 1rem 4rem 1rem;
+        text-align: center;
+        
+    }
+
+    .m-right{
+        width: 100%;
+        margin: auto;
+    }
+
+    #try-free{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #agreeTerms{
+        margin: 0.5rem auto 0 0rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+
+    }
+
+  }
