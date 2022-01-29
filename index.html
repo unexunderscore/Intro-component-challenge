@@ -19,7 +19,7 @@
 
   <!-- Footer -->
   <style>
-    .attribution { font-size: 11px; text-align: center; margin-top: 60px;}
+    .attribution { font-size: 11px; text-align: center; margin-top: 30px;}
     .attribution a { color: hsl(0, 0%, 100%); }
   </style>
 </head>
@@ -38,14 +38,37 @@
 
         
         <div class="input-layer">
-          First Name 
-          Last Name 
-          Email Address
-          Password
-    
-          Claim your free trial 
-    
-          By clicking the button, you are agreeing to our Terms and Services
+          <div class="card">
+          <form>
+            <div class="form-group topOne">
+              <img src="./images/icon-error.svg" alt="Error icon" class="icon">
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
+              <small id="firstWrong" class="form-text d-flex flex-row-reverse">First Name cannot be empty</small>
+            </div>
+            <div class="form-group">
+              <img src="./images/icon-error.svg" alt="Error icon" class="icon">
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name">
+              <small id="lastWrong" class="form-text d-flex flex-row-reverse">Last Name cannot be empty</small>
+            </div>
+            <div class="form-group">
+              <img src="./images/icon-error.svg" alt="Error icon" class="icon">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Adress">
+              <small id="emailWrong" class="form-text d-flex flex-row-reverse">Looks like this is not an email</small>
+            </div>
+            <div class="form-group">
+              
+              <img src="./images/icon-error.svg" alt="Error icon" class="icon">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <small id="passWrong" class="form-text d-flex flex-row-reverse">Password cannot be empty</small>
+              <button type="button" class="btn btn-primary btn-lg btn-success" id="claimFree">Claim your free trial</button>
+              <small id="agreeTerms" class="form-text d-flex justify-content-center">By clicking the button, you are agreeing to our<div id="termText">Terms and Services</div></small>
+            </div>
+            
+          </form>
+          
+
+          
+        </div>
         </div>
         </div>
       
