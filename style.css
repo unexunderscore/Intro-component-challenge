@@ -188,8 +188,10 @@ h1{
     }
 
     #try-free{
-        display: flex;
-        flex-direction: column;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
         
     }
 
