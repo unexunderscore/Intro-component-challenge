@@ -16,21 +16,35 @@ let small = document.querySelectorAll("small");
 //Selecting all inputs
 let inputs = document.querySelectorAll("input");
 
+// email validation func
+function isValid(){
+    const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(!inputs[2].value.match(mailformat)){
+        emailText.style.color = "hsl(0, 100%, 74%)";
+        small[2].classList.add("d-flex");
+        icons[2].style.display = "flex"; 
+    }
+    else{
+        emailText.style.color = "#212529";
+        small[2].classList.remove("d-flex");
+        icons[2].style.display = "none"; 
+    }
+}
+
+// empty inputs show error
 function isEmpty(){
     for(let i=0; i<=3; i++){
-        const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        
-        if(inputs[i].value.length == 0 || !inputs[2].value.match(mailformat)){
+         
+        if(inputs[i].value.length == 0){
             small[i].classList.add("d-flex");
             icons[i].style.display = "flex"; 
-            if(!inputs[2].value.match(mailformat)){
-                emailText.style.color = "hsl(0, 100%, 74%)";
-            }
+            
         }
         else{
             small[i].classList.remove("d-flex");
             icons[i].style.display = "none"; 
         }
     }
-        
+    isValid() 
 }
+
